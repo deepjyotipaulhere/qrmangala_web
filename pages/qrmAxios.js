@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const qrmAxios = axios.create({
-  baseURL: "http://10.1.13.5:8000/api",
+  // baseURL: "http://localhost:8000/api",
+  baseURL: "http://qrmangala.azurewebsites.net/api",
   headers: {
     Authorization: `Bearer`,
   },
