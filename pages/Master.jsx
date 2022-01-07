@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import { Container, Menu } from 'semantic-ui-react'
 import theme from '../styles/theme'
-import qrmAxios from './qrmAxios'
+import qrmAxios from '../qrmAxios'
 
 export default function Master({ children, title }) {
     const router = useRouter()

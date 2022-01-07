@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Button, Divider, Dropdown, Form, Grid, GridColumn, Image } from 'semantic-ui-react'
 import Master from './Master'
-import qrmAxios from './qrmAxios'
+import qrmAxios from '../qrmAxios'
 
 export default function Addqr() {
     const [qrs, setQrs] = useState([])

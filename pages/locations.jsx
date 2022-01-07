@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Button, Dropdown, Form, Input } from 'semantic-ui-react'
 import Master from './Master'
-import qrmAxios from './qrmAxios'
+import qrmAxios from '../qrmAxios'
 
 export default function Locations() {
     const [locations, setLocations] = useState([])

@@ -1,9 +1,9 @@
 import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import Master from './Master'
-import qrmAxios from './qrmAxios';
+import qrmAxios from '../qrmAxios';
 
 
-export default function index() {
+export default function Index() {
 
 
   const [data, setData] = useState([])
