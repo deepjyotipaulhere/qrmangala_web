@@ -1,7 +1,7 @@
 import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import Master from './Master'
 import qrmAxios from '../qrmAxios';
-import Image from 'next/image';
+import { Image } from 'semantic-ui-react';
 
 
 export default function Index() {
@@ -9,6 +9,7 @@ export default function Index() {
 
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
+  
 
   useEffect(() => {
     qrmAxios.get("locationvisit").then(response => {
@@ -21,8 +22,8 @@ export default function Index() {
 
   return (
     <Master title="Location Hits">
-        <img src="https://eeonitus.sirv.com/qrm1.png" style={{width:'100%',height:'auto'}} />
-        <img src="https://eeonitus.sirv.com/qrm2.png" style={{width:'100%',height:'auto'}} />
+      <Image src='/qrm1.png' alt="graph1" fluid />
+      <Image src='/qrm2.png' alt="graph2" fluid />
     </Master>
   )
 }

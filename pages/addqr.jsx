@@ -67,6 +67,8 @@ export default function Addqr() {
     }, [])
 
 
+
+
     return (
         <Master title='Add QR Code'>
             <Dropdown options={locations} placeholder='Select Location' selection onChange={(e,{value})=>setSelectedLocation(value)} />
@@ -78,7 +80,7 @@ export default function Addqr() {
                     <Grid columns={3}>
                         {qrs.data.map(qr => (
                             <GridColumn key={qr.id}>
-                                <Image fluid src={`//${qrs.host}${qr.image}`} />
+                                <img fluid src={`//${qrs.host}${qr.image}`} />
                                 <center>
                                     {qr.location.name}
                                 </center>
