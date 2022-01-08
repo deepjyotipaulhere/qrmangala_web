@@ -21,8 +21,14 @@ export default function Index() {
 
   return (
     <Master title="Location Hits">
-      <img src="/qrm1.png" alt='graph1' style={{width:'100%'}} />
-      <img src="/qrm2.png" alt='graph1' style={{width:'100%'}} />
+      <div style={{ width: '100%', }}>
+        {/* <h3>Scans</h3> */}
+        <Image src="/qrm1.png" alt='graph1' width="100%" height="100%" layout="responsive" objectFit="contain" />
+      </div>
+      <br></br>
+      <div style={{ width: '100%', position: '' }}>
+        <Image src="/qrm2.png" alt='graph1' width="100%" height="100%" layout="responsive" objectFit="contain" />
+      </div>
     </Master>
   )
 }
